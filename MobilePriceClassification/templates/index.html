@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}"/>
+    </head>
+    <body>
+      <h1>Mobile Phone Price Ranges Project</h1>
+        <section id="anasayfa">
+          <h2>Grafikler</h2>
+          <div class="container">
+            <div class="box"><img src="{{url_for('static',filename='img/3g.png')}}" /></div>
+            <div class="box"><img src="{{url_for('static',filename='img/4g.png')}}" /></div>
+            <div class="box"><img src="{{url_for('static',filename='img/bluetooth.png')}}" /></div>
+          </div>  
+          <div class="container">
+            <div class="box"><img src="{{url_for('static',filename='img/cift_sim.png')}}"/></div>
+            <div class="box"><img src="{{url_for('static',filename='img/touch_ekran.png')}}"/></div>
+            <div class="box"><img src="{{url_for('static',filename='img/touch_ekran.png')}}"/></div>
+          </div>
+          </section>
+
+          <section id="modeller">
+            <div class="container_left">
+              <h2>KNN: % {{knn_deger}}</h2>
+              <div class="cm"><img src="{{url_for('static',filename='img/cm_knn.png')}}" style="width:90%; height:90%"/></div>
+            </div>
+            <div class="container_right">
+              <div class="cm"><img src="{{url_for('static',filename='img/cm_dnn.png')}}" style="width:85%; height:93%"/></div>
+              <h2>DNN: % {{dnn_deger}}</h2>
+            </div>
+        </section>
+
+  </body>
+    </body>
+</html>
